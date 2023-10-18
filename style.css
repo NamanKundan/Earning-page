@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url(/fonts/webfonts/Montserrat-Alt1.css);
+
+
+
+:root {
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-montserrat-alt1: 'Montserrat-Alt1', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-sofia: 'sofia', sans-serif;
+}
+
+body {
+    font-family: var(--font-poppins);
+    background-color: rgb(15, 18, 18);
+    box-sizing: border-box;
+}
+
+header div div h1 {
+    /* text-transform: uppercase; */
+    font-family: var(--font-sofia);
+}
+
+.active {
+    background: -webkit-linear-gradient(45deg, rgb(80, 200, 255), rgb(30, 255, 128));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    fill: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+nav,
+.loginbtncontainer {
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    /* font-weight: 300; */
+    font-family: var(--font-montserrat);
+}
+
+.loginbtnborder {
+    transform: translate(3px, 3px);
+}
+
+.loginbtnface {
+    transform: translate(-3px, -3px);
+}
+
+.loginbtncontainer:hover .loginbtnborder {
+    transition: all 0.25s ease-in-out;
+    transform: translate(0px, 0px);
+}
+
+.loginbtncontainer:hover .loginbtnface {
+    transition: all 0.25s ease-in-out;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    transform: translate(0px, 0px);
+}
+
+.hamburger-container{
+    z-index: 99999;
+}
+
+#hamburger1 {
+    transition: all 0.3s ease-in-out;
+    top: 0%;
+}
+
+#hamburger1.toggle {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+#hamburger2 {
+    transition: all 0.3s ease-in-out;
+    top: 50%;
+    opacity: 100%;
+}
+
+#hamburger2.toggle {
+    opacity: 0%;
+}
+
+#hamburger3 {
+    transition: all 0.3s ease-in-out;
+    top: 100%;
+}
+
+#hamburger3.toggle {
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+#navigationscreen.show {
+    left: 0%;
+}
+
+#navigationscreen {
+    z-index: 999999;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    left: -100%;
+}
+
+section button {
+    /* background: linear-gradient(45deg, red, blue);
+    -webkit-background-clip: border;
+    border-color: transparent; */
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    font-family: var(--font-montserrat);
+    overflow: hidden;
+    position: relative;
+}
+
+.chevronsdown{
+    animation: bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate(0px,0px);
+    }
+    to{
+        transform: translate(0px, -40px);
+    }
+}
+
+
+.about-tagline{
+    font-family: var(--font-montserrat);
+}
+
+.custom-shape-divider-bottom-1687971544 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1687971544 svg {
+    position: relative;
+    display: block;
+    width: calc(179% + 1.3px);
+    height: 275px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1687971544 .shape-fill {
+    fill: #FF437D;
+}
+
+.about-cards{
+    font-family: var(--font-montserrat);
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Montserrat-Alt1.css">
+    <title>LazyEarnings - Earn Money Online</title>
+</head>
+
+<body class="antialiased min-h-screen">
+
+    <header class=" w-screen h-14 md:h-16 lg:h-20  bg-neutral-950 text-white px-8 lg:px-12">
+
+        <!-- Desktop Header -->
+        <div class="hidden lg:flex items-center justify-between h-full">
+            <div class="text-white lg:text-xl xl:text-2xl cursor-pointer">
+                <h1>LazyEarnings</h1>
+            </div>
+            <div>
+                <nav>
+                    <ul class="flex items-center space-x-4">
+                        <li class="home"><a class="active" href="./index.html">Home</a></li>
+                        <li class="about"><a class="" href="./about.html">About</a></li>
+                        <li class="contact"><a class="" href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="">
+                <div class="loginbtncontainer relative"><button
+                        class="loginbtnborder absolute border-[1px] border-white w-full h-full"></button><button
+                        class="loginbtnface text-black uppercase border-[1px] px-3 py-1 bg-white">Login</button></div>
+            </div>
+        </div>
+
+
+        <!-- Mobile Header -->
+        <div class="h-full items-center justify-between lg:hidden flex">
+            <div class="text-lg">
+                <h1>LazyEarnings</h1>
+            </div>
+            <div>
+                <div class="hamburger-container w-4 h-2.5 relative" onclick="nav()">
+                    <div class="hamburger1 bg-white w-full h-[1px] absolute rounded-full " id="hamburger1"></div>
+                    <div class="hamburger2 bg-white w-full h-[1px] absolute rounded-full " id="hamburger2"></div>
+                    <div class="hamburger3 bg-white w-full h-[1px] absolute rounded-full " id="hamburger3"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="h-screen bg-neutral-700 w-[80vw] fixed py-6" id="navigationscreen">
+                <nav class="list-none text-center grid">
+                    <li class="home"><a href="./index.html">home</a></li>
+                    <li class="about"><a href="./about.html">about</a></li>
+                    <li class="contact"><a href="">contact</a></li>
+                    <li><button class="uppercase p-[10px]">Login</button></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="min-h-screen">
+        <section class="box-border py-10 ">
+            <div class=" grid items-center content-center">
+                <div class="w-screen px-6 py-6 lg:px-8 xl:px-10 block md:flex lg:justify-around items-center">
+                    <div class="md:w-1/2 xl:w-2/3 text-white text-center md:text-left space-y-4">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl uppercase font-semibold">Earn Money Online</h1>
+                        <p class="capitalize md:text-sm lg:text-base">Start Earning on Multiple Platforms Like <br> android, windows, macOS and linux without any investment.</p>
+                        <div class="space-x-6 py-6 flex justify-center">
+                            <button class="border-[1px] border-white hover:text-black hover:bg-white duration-200 px-10 py-2 relative">Start Earning</button>
+                            <!-- <button class="border-[1px] border-white px-10 py-2 relative">Get Help</button> -->
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 px-6 py-6 flex justify-center">
+                        <img src="./assets/SVG/saves-time-working-with-our-application.svg" class="w-fit max-h-96 object-contain" alt="" />
+                    </div>
+                </div>
+                <div class="chevronsdown w-screen cursor-pointer flex justify-center text-white opacity-80" href="#section2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="section2" class="box-border py-10">
+            <div class="grid content-center items-center">
+                <div class="flex justify-center text-center py-8 text-white">
+                    <h1  class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase font-semibold">Converting Hours into Profitable Endeavors</h1>
+                </div>
+                <div class=" grid items-center content-center">
+                    <div class="w-screen px-6 py-6 lg:px-8 xl:px-10 block md:flex lg:justify-around items-center">
+
+                        <div class="md:w-1/2 px-6 pb-6 flex justify-center">
+                            <img src="./assets/SVG/Pomodoro-technique.svg" class="w-fit max-h-96 object-contain" alt="" />
+                        </div>
+                        <div class="md:w-1/2 xl:w-2/3 text-white text-center md:text-left space-y-4">
+                            <h1 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl capitalize font-semibold">Flexible Solutions for Changing Needs</h1>
+                            <p class="capitalize md:text-sm lg:text-base">Everyone can make money using lazyearning.in. Wherever you go, you may make money using any internet-connected gadget. You will be compensated for the time and effort you put into using the platform..</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box-border py-10">
+            <div class="grid content-center items-center">
+                <div class="flex justify-center text-center py-8 text-white">
+                    <h1  class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase font-semibold">Select The best way you like to earn money</h1>
+                </div>
+                <div class=" grid items-center content-center">
+                    <div class="w-screen px-6 py-6 lg:px-8 xl:px-10 block md:flex lg:justify-around items-center">
+
+                        <div class="md:w-1/2 xl:w-2/3 text-white text-center md:text-left space-y-4">
+                            <h1 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl capitalize font-semibold">Numerous Routes to Earn</h1>
+                            <p class="capitalize md:text-sm lg:text-base">You can now decide how you wish to make money: by taking surveys, watching films, purchasing online, or opening accounts.</p>
+                        </div>
+                        <div class="md:w-1/2 px-6 py-6 flex justify-center">
+                            <img src="./assets/SVG/Money-transfer-with-help-of-mobile-wallet-1.svg" class="w-fit max-h-96 object-contain" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box-border py-10">
+            <div class="grid content-center items-center">
+                <div class="flex justify-center text-center py-8 text-white">
+                    <h1  class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase font-semibold px-4">Collecting Your Financial Gains</h1>
+                </div>
+                <div class=" grid items-center content-center justify-center">
+                    <div class="w-screen px-6 py-6 lg:px-8 xl:px-10 block md:flex lg:justify-around items-center">
+                        <div class="md:w-1/2 px-6 pb-6 flex justify-center">
+                            <img src="./assets/SVG/Business-People-Analyzing-Growth-Charts.svg" class="w-fit max-h-96 object-contain" alt="" />
+                        </div>
+                        <div class="md:w-1/2 xl:w-2/3 text-white text-center md:text-left space-y-4">
+                            <h1 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl capitalize font-semibold">Get Profits As Much as you want</h1>
+                            <p class="capitalize md:text-sm lg:text-base">You can make up to Rs. 1000 - Rs. 5000 every week by completing basic activities, but there is no cap on how much you can make.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="w-screen py-10 bg-[#f2004b] bg-opacity-40 flex flex-col justify-center items-center space-y-8">
+                        <h1 class="text-2xl lg:text-3xl text-white font-semibold">Start Making Money Today</h1>
+                        <button class="uppercase px-10 py-2 text-white border-[1px] border-white h-fit hover:bg-[#f2004b]">register now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="w-screen flex flex-wrap justify-between text-center text-white bg-neutral-800 p-10">
+            <div class="m-4 flex-1">
+                <h5 class="font-semibold text-center py-4">Learning and Support</h5>
+                <ul class="space-y-3">
+                    <li class="cursor-pointer" href="" >Help Center</li>
+                    <li class="cursor-pointer" href="" >Site Map</li>
+                    <li class="cursor-pointer" href="" >Contact us</li>
+                </ul>
+            </div>
+            <div class="m-4 flex-1">
+                <h5 class="font-semibold text-center py-4">Company</h5>
+                <ul class="space-y-3">
+                    <li class="cursor-pointer" href="" >About us</li>
+                    <li class="cursor-pointer" href="" >Commitment</li>
+                    <li class="cursor-pointer" href="" >Media Kit</li>
+                </ul>
+            </div>
+            <div class="m-4 flex-1">
+                <h5 class="font-semibold text-center py-4">Product</h5>
+                <ul class="space-y-3">
+                    <li class="cursor-pointer" href="" >Why LazyEarnings</li>
+                    <li class="cursor-pointer" href="" >Methods of Earnings</li>
+                    <li class="cursor-pointer" href="" >Referral Program</li>
+                </ul>
+            </div>
+            <div class="m-4 flex-1">
+                <h5 class="font-semibold text-center py-4">Legal</h5>
+                <ul class="space-y-3">
+                    <li class="cursor-pointer" href="" >Privacy Policy</li>
+                    <li class="cursor-pointer" href="" >Terms of Service</li>
+                    <li class="cursor-pointer" href="" >Advertising Policy</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Montserrat-Alt1.css">
+    <title>LazyEarnings - Earn Money Online</title>
+</head>
+
+<body class="antialiased min-h-screen">
+
+    <header class=" w-screen h-14 md:h-16 lg:h-20  bg-neutral-950 text-white px-8 lg:px-12">
+
+        <!-- Desktop Header -->
+        <div class="hidden lg:flex items-center justify-between h-full">
+            <div class="text-white lg:text-xl xl:text-2xl cursor-pointer">
+                <h1>LazyEarnings</h1>
+            </div>
+            <div>
+                <nav>
+                    <ul class="flex items-center space-x-4">
+                        <li class="home"><a class="" href="./index.html">Home</a></li>
+                        <li class="about"><a class="active" href="./about.html">About</a></li>
+                        <li class="contact"><a class="" href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="">
+                <div class="loginbtncontainer relative"><button
+                        class="loginbtnborder absolute border-[1px] border-white w-full h-full"></button><button
+                        class="loginbtnface text-black uppercase border-[1px] px-3 py-1 bg-white">Login</button></div>
+            </div>
+        </div>
+
+
+        <!-- Mobile Header -->
+        <div class="h-full items-center justify-between lg:hidden flex">
+            <div class="text-lg">
+                <h1>LazyEarnings</h1>
+            </div>
+            <div>
+                <div class="hamburger-container w-4 h-2.5 relative" onclick="nav()">
+                    <div class="hamburger1 bg-white w-full h-[1px] absolute rounded-full " id="hamburger1"></div>
+                    <div class="hamburger2 bg-white w-full h-[1px] absolute rounded-full " id="hamburger2"></div>
+                    <div class="hamburger3 bg-white w-full h-[1px] absolute rounded-full " id="hamburger3"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="h-screen bg-neutral-700 w-[80vw] fixed py-6" id="navigationscreen">
+                <nav class="list-none text-center grid">
+                    <li class="home"><a href="./index.html">home</a></li>
+                    <li class="about"><a href="./about.html">about</a></li>
+                    <li class="contact"><a href="">contact</a></li>
+                    <li><button class="uppercase p-[10px]">Login</button></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="">
+        <section class="min-h-full box-border">
+            <div class="space-y-4">
+                <div class="bg-neutral-800 flex flex-col items-center md:px-20 lg:px-24 py-20 space-y-3 md:space-y-4">
+                    <h1
+                        class="font-medium capitalize text-transparent bg-gradient-to-tr from-[#00f299] to-[#44e8f4] bg-clip-text text-center md:text-left text-3xl md:text-4xl lg:text-5xl xl:text-6xl p-4">
+                        About Lazy Earnings</h1>
+                    <p
+                        class="about-tagline text-white uppercase text-sm md:text-base lg:text-xl xl:text-2xl font-medium">
+                        Invest Less and Earn More</p>
+                </div>
+                <div class="px-5 w-screen flex justify-around">
+                    <div class="md:max-w-[50%] space-y-4">
+                        <h1 class="text-white font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl">Our Company</h1>
+                        <p class="text-white text-sm lg:text-base">Helping people by providing them with a chance to
+                            earn extra money online has been our top goal.
+                            Using a product they can rely on should be possible, in our opinion, for those who need more
+                            income. Our main goal is to create a task-exchange system between marketers and workers,
+                            allowing workers to network with businesses and learn about new products.
+                            We continuously work to offer as many cutting-edge features as we can, in accordance with
+                            our
+                            long-term plan. Behind our picture is the global rise in unemployment brought on by
+                            automation,
+                            which might eliminate hundreds of millions of jobs over the course of the next ten years.
+                        </p>
+                    </div>
+                    <div class="hidden md:contents max-w-[50%]">
+                        <img src="./assets/SVG/About-Us.svg" class="w-fit max-h-80 xl:max-h-96 object-contain" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="min-h-full box-border my-10 relative">
+            <div class="">
+                <div class="-z-50 custom-shape-divider-bottom-1687971544">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="flex z-0 flex-wrap justify-center">
+                <div class="about-cards bg-neutral-800 box-border grid place-items-center place-content-center space-y-4 border-[1px] border-neutral-600 shadow-2xl rounded-lg  w-60 h-80 m-4">
+                    <h1 class="text-white font-bold text-5xl">2023</h1>
+                    <p class="text-white font-semibold">Founded</p>
+                </div>
+                <div class="about-cards bg-neutral-800 box-border grid place-items-center place-content-center space-y-4 border-[1px] border-neutral-600 shadow-2xl rounded-lg  w-60 h-80 m-4">
+                    <h1 class="text-white font-bold text-5xl">0</h1>
+                    <p class="text-white font-semibold">Earners</p>
+                </div>
+                <div class="about-cards bg-neutral-800 box-border grid place-items-center place-content-center space-y-4 border-[1px] border-neutral-600 shadow-2xl rounded-lg  w-60 h-80 m-4">
+                    <h1 class="text-white font-bold text-5xl">0k</h1>
+                    <p class="text-white font-semibold">Payouts</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-4 min-h-screen flex items-center">
+            <div class="text-white space-y-4 max-w-screen-lg mx-auto ">
+                <h1 class="font-semibold text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center">Customer Comes First</h1>
+                <p class="text-center">At LazyEarnings, we consistently invent fresh ways for today's earners to make money, as well as imaginative marketing material for companies. We have upheld these three core principles of our business since the beginning:</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="w-screen flex flex-wrap justify-between text-center text-white bg-neutral-800 p-10">
+                <div class="m-4 flex-1">
+                    <h5 class="font-semibold text-center py-4">Learning and Support</h5>
+                    <ul class="space-y-3">
+                        <li class="cursor-pointer" href="" >Help Center</li>
+                        <li class="cursor-pointer" href="" >Site Map</li>
+                        <li class="cursor-pointer" href="" >Contact us</li>
+                    </ul>
+                </div>
+                <div class="m-4 flex-1">
+                    <h5 class="font-semibold text-center py-4">Company</h5>
+                    <ul class="space-y-3">
+                        <li class="cursor-pointer" href="" >About us</li>
+                        <li class="cursor-pointer" href="" >Commitment</li>
+                        <li class="cursor-pointer" href="" >Media Kit</li>
+                    </ul>
+                </div>
+                <div class="m-4 flex-1">
+                    <h5 class="font-semibold text-center py-4">Product</h5>
+                    <ul class="space-y-3">
+                        <li class="cursor-pointer" href="" >Why LazyEarnings</li>
+                        <li class="cursor-pointer" href="" >Methods of Earnings</li>
+                        <li class="cursor-pointer" href="" >Referral Program</li>
+                    </ul>
+                </div>
+                <div class="m-4 flex-1">
+                    <h5 class="font-semibold text-center py-4">Legal</h5>
+                    <ul class="space-y-3">
+                        <li class="cursor-pointer" href="" >Privacy Policy</li>
+                        <li class="cursor-pointer" href="" >Terms of Service</li>
+                        <li class="cursor-pointer" href="" >Advertising Policy</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
